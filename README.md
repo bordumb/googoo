@@ -1,4 +1,4 @@
-# NestSwap — Product Brief & Technical Specification
+# GooGoo — Product Brief & Technical Specification
 
 **Version:** 0.1.0
 **Date:** April 2026
@@ -8,7 +8,7 @@
 
 ## 1. Product Vision
 
-NestSwap is a mobile-first marketplace where new parents buy, sell, and swap children's items — and find community while doing it. Kids outgrow things fast. Parents accumulate gear they no longer need and need gear they can't justify buying new. NestSwap closes that loop with a hyper-local-first approach: show me what's nearby, let me swap or buy it, and connect me with the parent behind the listing.
+GooGoo is a mobile-first marketplace where new parents buy, sell, and swap children's items — and find community while doing it. Kids outgrow things fast. Parents accumulate gear they no longer need and need gear they can't justify buying new. GooGoo closes that loop with a hyper-local-first approach: show me what's nearby, let me swap or buy it, and connect me with the parent behind the listing.
 
 **Core insight:** Parenting marketplaces fail when they're just "Craigslist for baby stuff." Parents want to transact with *other parents* — people they can trust, relate to, and potentially befriend. The social layer isn't a nice-to-have; it's the moat.
 
@@ -86,7 +86,7 @@ Full-catalog search and browse. Two modes:
 
 #### Tab 3: Community (Social)
 
-The social hub. This is what makes NestSwap sticky beyond transactions.
+The social hub. This is what makes GooGoo sticky beyond transactions.
 
 1. **Local Groups** — Auto-joined based on geography (e.g., "Tacoma Parents," "South Sound Families"). Users can also join interest-based groups ("Cloth Diapering," "Montessori at Home," "Twin Parents").
 2. **Discussion Feed** — Posts within groups. Text + optional image. Threaded replies. Reactions (👍 ❤️ 😂 — keep it simple, max 3–4 reactions).
@@ -153,7 +153,7 @@ Rationale:
 ### 5.2 Monorepo Structure
 
 ```
-nestswap/
+GooGoo/
 ├── apps/
 │   └── mobile/                    # Expo app (iOS, Android, Web)
 │       ├── app/                   # expo-router file-based routes
@@ -526,7 +526,7 @@ Use the following prompt when handing this spec to an LLM for implementation. It
 ---
 
 ```
-You are a senior staff engineer building "NestSwap," a mobile-first marketplace
+You are a senior staff engineer building "GooGoo," a mobile-first marketplace
 for parents to buy, sell, and swap children's items. The app also has a social
 layer (community groups, discussions, DMs) to connect parents locally.
 
@@ -542,7 +542,7 @@ TECH STACK (non-negotiable):
 - TypeScript everywhere. Strict mode. No `any`.
 
 MONOREPO STRUCTURE:
-nestswap/
+GooGoo/
 ├── apps/mobile/         # Expo app
 │   ├── app/             # expo-router routes (file-based)
 │   ├── components/      # Reusable UI components
@@ -671,6 +671,6 @@ no abbreviated implementations. Every file should be shippable.
 
 **Geo-focused launch.** Pick one metro area (e.g., Tacoma/South Sound). Saturate it before expanding. A marketplace with 500 listings in one city is useful. A marketplace with 500 listings spread across 50 cities is useless.
 
-**Supply-side seeding:** Partner with 2–3 local parent groups (Facebook groups, library storytime groups, MOPS chapters). Offer to help members photograph and list their items at a "NestSwap listing party." Get 100 listings live before public launch.
+**Supply-side seeding:** Partner with 2–3 local parent groups (Facebook groups, library storytime groups, MOPS chapters). Offer to help members photograph and list their items at a "GooGoo listing party." Get 100 listings live before public launch.
 
-**Demand-side:** Targeted ads on Instagram/Facebook to parents within the metro. Message: "Your kid outgrew it. Their kid needs it. NestSwap — the neighborhood marketplace for parents."
+**Demand-side:** Targeted ads on Instagram/Facebook to parents within the metro. Message: "Your kid outgrew it. Their kid needs it. GooGoo — the neighborhood marketplace for parents."
