@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "GooGoo",
+    "slug": "googoo",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7F5F3"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.googoo.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "GooGoo uses your location to show nearby listings and connect you with local parents.",
+        "NSCameraUsageDescription": "GooGoo uses your camera to take photos of items you want to list.",
+        "NSPhotoLibraryUsageDescription": "GooGoo accesses your photos to add images to your listings."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F7F5F3"
+      },
+      "package": "com.googoo.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-image-picker",
+      "expo-notifications",
+      "expo-secure-store"
+    ],
+    "scheme": "googoo",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
