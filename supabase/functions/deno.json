@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "@shared/": "./_shared/"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

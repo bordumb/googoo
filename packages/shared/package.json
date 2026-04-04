@@ -1,0 +1,20 @@
+{
+  "name": "@googoo/shared",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@googoo/eslint-config": "workspace:*",
+    "@googoo/typescript-config": "workspace:*",
+    "eslint": "^8",
+    "typescript": "^5"
+  }
+}

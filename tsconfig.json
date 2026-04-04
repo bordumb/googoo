@@ -1,0 +1,3 @@
+{
+  "extends": "@googoo/typescript-config/base.json"
+}
